@@ -1,0 +1,22 @@
+.cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 1s ease-out;
+  animation: cursorAnim 2s infinite alternate;
+  z-index: 50;
+}
+
+@keyframes cursorAnim {
+  0% {
+      transform: rotate(0deg) scale(1);
+  }
+  100% {
+      transform: rotate(360deg) scale(1.5);
+      border-radius: 20%;
+  }
+
+}

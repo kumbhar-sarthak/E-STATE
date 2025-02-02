@@ -1,0 +1,29 @@
+#slider::-webkit-scrollbar {
+  display: none;
+}
+
+.gradient-hover:hover {
+  background: linear-gradient(to right, transparent, #ffffff 60%);
+}
+
+.gradient-hover-left:hover {
+  background: linear-gradient(to left, transparent, #ffffff 60%);
+}
+
+.display-right {
+  opacity: 0;
+  z-index: 10;
+}
+
+.display-left {
+  opacity: 0;
+  z-index: 10;
+}
+
+.button-container-right:hover .display-right {
+  opacity: 1;
+}
+
+.button-container-left:hover .display-left {
+  opacity: 1;
+}
