@@ -1,0 +1,28 @@
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width : 730px){
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .dateinput{
+    margin-right: 0%;
+  }
+  .mobileinput{
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width : 500px){
+  .first{
+    display: none;
+  }
+}
