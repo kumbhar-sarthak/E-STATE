@@ -7,6 +7,9 @@ import Slider from "../sliderDisplay/slider";
 import { Page3 } from "../InquiryForm/Page3";
 import Lenis from "lenis";
 import { About } from "../aboutSection/About";
+import { Investment } from "../Investment/Investment";
+import ScrollingWrapper from "../Investment/ScrollWapper";
+import { TextEffect } from "../Investment/textEffect";
 
 const Home = () => {
 
@@ -58,10 +61,16 @@ const Home = () => {
       <div className="w-full h-screen mt-20 snap-start">
         <Slider/>
       </div>
-      <div className="w-full h-screen snap-start opacity-0 translate-y-10 transition-all duration-700" ref={sectionThird}>
+      <div className="w-full h-screen snap-start opacity-0 translate-y-10 transition-all duration-700 p-6" ref={sectionThird}>
         <Page3 />
       </div>
-      <div className="w-full h-screen mt-10 snap-start">
+      <div className=" w-full h-screen mt-40 snap-start">
+        <TextEffect/>
+      </div>
+      <div className="w-full h-full mt-10 snap-start">
+        <ScrollingWrapper/>
+      </div>
+      <div className="w-full h-screen mt-10 snap-start " id="about">
         <About />
       </div>
       </div>
