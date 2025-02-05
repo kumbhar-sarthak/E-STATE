@@ -1,6 +1,7 @@
-import React from 'react';
+import React  from 'react';
 import { FaUserCircle } from "react-icons/fa";
 import { useNavigate } from 'react-router';
+import { About } from '../aboutSection/About';
 
 const Navbar = () => {
   return (
@@ -11,7 +12,9 @@ const Navbar = () => {
         </div>
         <div className="flex items-center space-x-10">
           <div>
+            <a href="#about">
             About
+            </a>
           </div>
           <button onClick={()=>{useNavigate('/Profile')}} className="text-black mx-2 cursor-pointer">
             <FaUserCircle size={24} />

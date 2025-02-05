@@ -3,7 +3,7 @@ import { BiTargetLock } from "react-icons/bi";
 import "../home.css";
 
 export const Search = () => {
-
+  const [budget, setbudget] = useState(false);
   const modalContentRef = useRef(null);
   const triggerDivRef = useRef(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -46,37 +46,45 @@ export const Search = () => {
     };
   }, [isModalVisible]);
 
-
-
-
   const handleTabSwitch = (event) => {
     const tabs = document.querySelectorAll('.tabs');
     tabs.forEach(tab => {
       if (tab.classList.contains('selected')) {
         tab.classList.remove('selected');
       }
-    })
+    });
 
     event.target.classList.add('selected');
-  }
+  };
 
   const [sliding, setsliding] = useState(false);
-
-
 
   const [price, setPrice] = useState(null);
 
   const handlePrice = (event) => {
     setPrice(event.target.value);
     setsliding(false);
-  }
+  };
   const displayPrice = () => {
     if (price == 0) {
-      setsliding(false)
+      setsliding(false);
     } else {
       setsliding(true);
     }
-  }
+  };
+
+  // New states and toggle functionality for Budget and Type buttons
+  const [showTypeOptions, setShowTypeOptions] = useState(false);
+
+  const handleBudgetToggle = () => {
+    setbudget(!budget);
+    setShowTypeOptions(false); // Hide type options when budget is clicked
+  };
+
+  const handleTypeToggle = () => {
+    setShowTypeOptions(!showTypeOptions);
+    setbudget(false); // Hide budget slider when type is clicked
+  };
 
   return (
     <>
@@ -170,30 +178,62 @@ export const Search = () => {
                 </form>
               </p>
               <div id="buy-slider">
-                <div>
-                  <label htmlFor="Price">Price</label>
+                <div className="flex space-x-2">
+                  
+                  <button
+                    className="cursor-pointer mb-5 border border-gray-400 pr-3 pl-3 pt-1 pb-1 rounded-2xl "
+                    onClick={handleBudgetToggle}
+                  >
+                    Budget
+                  </button>
+                  <button
+                    className="cursor-pointer mb-5 border border-gray-400 pr-3 pl-3 pt-1 pb-1 rounded-2xl"
+                    onClick={handleTypeToggle}
+                  >
+                    Type
+                  </button>
                 </div>
-                <div className="flex items-center gap-4">
-                  <label htmlFor="0">0</label>
-                  <input
-                    id="small-range"
-                    className="w-3/4 range-sm h-1 cursor-pointer dark:bg-gray-700 appearance-none cursor-pointer dark:bg-gray-700 "
-                    type="range"
-                    defaultValue="0"
-                    onChange={handlePrice}
-                    onMouseUp={displayPrice}
-                    onTouchEnd={displayPrice}
-                  />
-                  <label htmlFor="100">100 Lakhs</label>
-                </div>
-                {sliding && <div
-                  className="w-30 m-3 border border-gray-400 p-1 rounded-md text-center bg-blue-100"
-                  id="price"
-                > {price} Lakhs
-                </div>}
+
+                {budget && (
+                    <div className="flex items-center gap-4">
+                      <label htmlFor="0">0</label>
+                      <input
+                        id="small-range"
+                        className="w-3/4 range-sm h-1 cursor-pointer dark:bg-gray-700 appearance-none cursor-pointer dark:bg-gray-700 "
+                        type="range"
+                        defaultValue="0"
+                        onChange={handlePrice}
+                        onMouseUp={displayPrice}
+                        onTouchEnd={displayPrice}
+                      />
+                      <label htmlFor="100">100 Lakhs</label>
+                    </div>
+                  )}
+                    {sliding && (
+                      <div className="w-30 m-3 border border-gray-400 p-1 rounded-md text-center bg-blue-100">
+                        {price} Lakhs
+                      </div>
+                    )}
+                
+
+                
+                {showTypeOptions && (
+                  <div className="flex gap-3 mt-4">
+                    <button className="border border-black-400 px-4 py-1 rounded-2xl cursor-pointer" >
+                      1BHK
+                    </button>
+                    <button className="border border-black-400 px-4 py-1 rounded-2xl cursor-pointer">
+                      2BHK
+                    </button>
+                    <button className="border border-black-400 px-4 py-1 rounded-2xl cursor-pointer">
+                      3BHK
+                    </button>
+                    <button className="border border-black-400 px-4 py-1 rounded-2xl cursor-pointer">
+                      4BHK
+                    </button>
+                  </div>
+                )}
               </div>
-
-
 
               {/* for all is same */}
               <div id="buy-buttons" className="flex gap-4 items-center mt-5">
