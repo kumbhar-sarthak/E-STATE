@@ -7,7 +7,6 @@ import Slider from "../sliderDisplay/slider";
 import { Page3 } from "../InquiryForm/Page3";
 import Lenis from "lenis";
 import { About } from "../aboutSection/About";
-import { Investment } from "../Investment/Investment";
 import ScrollingWrapper from "../Investment/ScrollWapper";
 import { TextEffect } from "../Investment/textEffect";
 

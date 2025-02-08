@@ -1,5 +1,6 @@
 import { useReducer, useEffect } from "react";
 
+// for making custom hook for cursor or using Reducer Hook
 const cursorReducer = (state, action) => {
   switch (action.type) {
     case "upate_mouse_position":

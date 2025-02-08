@@ -1,7 +1,6 @@
 import React  from 'react';
 import { FaUserCircle } from "react-icons/fa";
 import { useNavigate } from 'react-router';
-import { About } from '../aboutSection/About';
 
 const Navbar = () => {
   return (
