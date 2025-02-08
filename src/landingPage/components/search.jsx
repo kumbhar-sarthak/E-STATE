@@ -73,19 +73,20 @@ export const Search = () => {
     }
   };
 
-  // New states and toggle functionality for Budget and Type buttons
+  
   const [showTypeOptions, setShowTypeOptions] = useState(false);
 
   const handleBudgetToggle = () => {
     setbudget(!budget);
-    setShowTypeOptions(false); // Hide type options when budget is clicked
+    setShowTypeOptions(false); 
   };
 
   const handleTypeToggle = () => {
     setShowTypeOptions(!showTypeOptions);
-    setbudget(false); // Hide budget slider when type is clicked
+    setbudget(false); 
   };
 
+  // this is menu or search page for finding property
   return (
     <>
       <div

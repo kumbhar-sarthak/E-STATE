@@ -58,7 +58,7 @@ const ScrollingWrapper = () => {
           <div className="scrolling-item item-1">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
               <div className="p-6 pl-8 font-semibold">
-                <div className="text-9xl text-gray-300 font-bold">Step 01</div>
+                <div className="text-9xl text-gray-300 font-bold">01</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12">Set Your Goals & Budget</div>
                   <div className="pt-5">Before investing in real estate, define your objectives and financial capacity.
@@ -67,7 +67,7 @@ const ScrollingWrapper = () => {
                     budget
                     accordingly.</div>
                   <div className="pt-10">
-                    <p className="p-5 border border-solid-gray">
+                    <p className="p-5 ">
                       The first step in real estate investment is understanding why you want to invest. Are you looking for
                       a
                       long-term asset that appreciates over time, a rental property for monthly income, or a home for
@@ -88,13 +88,13 @@ const ScrollingWrapper = () => {
           <div className="scrolling-item item-2">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
               <div className="p-6 pl-8 font-semibold">
-                <div className="text-9xl text-gray-300 font-bold">Step 02</div>
+                <div className="text-9xl text-gray-300 font-bold">02</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12">Research the Market</div>
                   <div className="pt-5">Thorough market research is crucial to making informed decisions. Analyze property
                     trends, location potential, and real estate laws to ensure a profitable investment.</div>
                   <div className="pt-10">
-                    <p className="p-5 border border-solid-gray">
+                    <p className="p-5 ">
                       Real estate values can fluctuate depending on economic conditions, demand-supply balance, and
                       development projects in a given location. Start by researching areas with high growth potential, good
                       infrastructure, and strong rental demand. Look at historical price trends and future projections to
@@ -111,14 +111,14 @@ const ScrollingWrapper = () => {
           <div className="scrolling-item item-3">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
               <div className="p-6 pl-8 font-semibold">
-                <div className="text-9xl text-gray-300 font-bold">Step 03</div>
+                <div className="text-9xl text-gray-300 font-bold">03</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12"> Secure Financing</div>
                   <div className="pt-5">Understanding your financing options is key to a smooth investment. Compare
                     self-funding, mortgage loans, and other financial strategies to determine the best way to fund your
                     purchase.</div>
                   <div className="pt-10">
-                    <p className="p-5 border border-solid-gray">
+                    <p className="p-5 ">
                       Once you have set a budget, explore financing options. You can purchase a property through
                       self-funding, bank loans, private lenders, or investment partnerships. If you plan to take a loan,
                       ensure your credit score is high to qualify for better interest rates. Compare loan options from
@@ -132,13 +132,13 @@ const ScrollingWrapper = () => {
           <div className="scrolling-item item-4">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
               <div className="p-6 pl-8 font-semibold">
-                <div className="text-9xl text-gray-300 font-bold">Step 04</div>
+                <div className="text-9xl text-gray-300 font-bold">04</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12">Find & Evaluate Properties</div>
                   <div className="pt-5">Choosing the right property involves evaluating its location, future appreciation
                     potential, and legal status. Inspect properties thoroughly before making a decision.</div>
                   <div className="pt-10">
-                    <p className="p-5 border border-solid-gray">
+                    <p className="p-5 ">
                       After securing finances, the next step is to identify and shortlist properties. Look for properties in
                       locations that align with your investment goals. Factors such as proximity to schools, hospitals, and
                       public transport can affect property value and rental demand.
@@ -151,13 +151,13 @@ const ScrollingWrapper = () => {
           <div className="scrolling-item item-5">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
               <div className="p-6 pl-8 font-semibold">
-                <div className="text-9xl text-gray-300 font-bold">Step 05</div>
+                <div className="text-9xl text-gray-300 font-bold">05</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12"> Close the Deal & Manage Your Investment</div>
                   <div className="pt-5">Finalizing the property purchase involves legal paperwork, registration, and effective
                     management to ensure long-term profitability.</div>
                   <div className="pt-10">
-                    <p className="p-5 border border-solid-gray">
+                    <p className="p-5 ">
                       Once you have selected a property, it’s time to finalize the deal. This involves signing agreements,
                       completing legal documentation, and registering the property in your name. After purchase, decide on
                       how
