@@ -57,7 +57,7 @@ const ScrollingWrapper = () => {
         <div className="scrolling-content" id="scrollingContent" ref={scrollingContentRef}>
           <div className="scrolling-item item-1">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
-              <div className="p-6 pl-8 font-semibold">
+              <div className="p-6 pl-8 font-semibold items">
                 <div className="text-9xl text-gray-300 font-bold">01</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12">Set Your Goals & Budget</div>
@@ -87,7 +87,7 @@ const ScrollingWrapper = () => {
           </div>
           <div className="scrolling-item item-2">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
-              <div className="p-6 pl-8 font-semibold">
+              <div className="p-6 pl-8 font-semibold items">
                 <div className="text-9xl text-gray-300 font-bold">02</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12">Research the Market</div>
@@ -110,7 +110,7 @@ const ScrollingWrapper = () => {
           </div>
           <div className="scrolling-item item-3">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
-              <div className="p-6 pl-8 font-semibold">
+              <div className="p-6 pl-8 font-semibold items">
                 <div className="text-9xl text-gray-300 font-bold">03</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12"> Secure Financing</div>
@@ -131,7 +131,7 @@ const ScrollingWrapper = () => {
           </div>
           <div className="scrolling-item item-4">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
-              <div className="p-6 pl-8 font-semibold">
+              <div className="p-6 pl-8 font-semibold items">
                 <div className="text-9xl text-gray-300 font-bold">04</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12">Find & Evaluate Properties</div>
@@ -150,7 +150,7 @@ const ScrollingWrapper = () => {
           </div>
           <div className="scrolling-item item-5">
             <div className="w-screen h-screen font-sans overflow-x-hidden">
-              <div className="p-6 pl-8 font-semibold">
+              <div className="p-6 pl-8 font-semibold items">
                 <div className="text-9xl text-gray-300 font-bold">05</div>
                 <div className="pl-8">
                   <div className="text-2xl pt-12"> Close the Deal & Manage Your Investment</div>

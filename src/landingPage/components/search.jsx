@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { BiTargetLock } from "react-icons/bi";
+import { TbHomeSearch } from "react-icons/tb";
 import "../home.css";
 
 export const Search = () => {
@@ -90,11 +91,13 @@ export const Search = () => {
   return (
     <>
       <div
-        className="w-full h-50 rounded-2xl custom"
+        className="w-full h-50 rounded-2xl custom flex justify-center items-center"
         ref={triggerDivRef}
         onMouseEnter={showModal}
       >
-        {isModalVisible && (
+        <TbHomeSearch size={40} color="rgba(0, 0, 0, 0.169)"/>
+      </div>
+      {isModalVisible && (
           <div
             className="absolute inset-0 flex items-center justify-center w-full h-screen bg-opacity-50 z-10"
             id="modalDiv"
@@ -238,7 +241,7 @@ export const Search = () => {
 
               {/* for all is same */}
               <div id="buy-buttons" className="flex gap-4 items-center mt-5">
-                <div className="search">Search</div>
+                <div className="search" onClick={()=>{alert("Working on it sorry for inconvenience 🙏🙏")}}>Search</div>
                 <div className="flex items-center">
                   <button
                     className="bg-gray-100 text-black px-4 py-2 rounded-md cursor-pointer"
@@ -250,8 +253,7 @@ export const Search = () => {
               </div>
             </div>
           </div>
-        )}
-      </div>
+      )}
     </>
   );
 };

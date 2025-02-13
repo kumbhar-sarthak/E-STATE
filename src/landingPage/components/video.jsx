@@ -10,7 +10,7 @@ export const Video = () => {
         loop
         muted
       >
-        <source src="./public/display.mp4" type="video/mp4" />
+        <source src="/display.mp4" type="video/mp4" />
       </video>
     </>
   )

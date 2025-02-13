@@ -66,4 +66,8 @@ body{
     height: auto;
     padding: 20px;
   }
+
+  .items{
+    padding-left: 0%;
+  }
 }

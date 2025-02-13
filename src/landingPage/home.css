@@ -10,23 +10,41 @@ html {
 }
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
 
-body{
-  font-family: "Poppins", serif;;
+body {
+  font-family: "Poppins", serif;
+  ;
   font-weight: 400;
 }
 
-::selection{
-  background-color: lightcoral;
+::selection {
+  background-color: rgba(128, 240, 229, 0.832);
+}
+
+
+@keyframes gradientMove {
+  0% { background-position: top right; }
+  100% { background-position: bottom left; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 10px #e4b1bfba; }
+  50% { box-shadow: 0 0 20px rgba(255, 183, 193, 0.389);  }
 }
 
 .custom {
-  background: linear-gradient(90deg, #FFE2E2, #F7CFD8);
+  background: linear-gradient(to bottom left, #ffedfaba, #dca2b2b9);
+  background-size: 200% 200%;
+  animation: gradientMove 3s alternate infinite, glow 3s alternate infinite;
 }
+
+
+
+
 
 
 #modalDiv.hidden {
@@ -34,14 +52,14 @@ body{
 }
 
 #modalContent {
-  transform: scale(0.8); 
+  transform: scale(0.8);
   opacity: 0;
   transition: transform 1s ease, opacity 0.4s ease;
 }
 
 #modalContent.active {
-  transform: scale(1); 
-  opacity: 1; 
+  transform: scale(1);
+  opacity: 1;
 }
 
 
@@ -55,22 +73,24 @@ input[type="checkbox"] {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  color: #000; /* Default text color */
-  transition: color 0.3s ease; /* Smooth transition back to original */
+  color: #000;
+  /* Default text color */
+  transition: color 0.3s ease;
+  /* Smooth transition back to original */
 }
 
 .search:hover {
-  color: transparent; 
-  background: linear-gradient(120deg,#ee8cdc, #d83535, #5d69e2 );
+  color: transparent;
+  background: linear-gradient(120deg, #ee8cdc, #d83535, #5d69e2);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shinyWave 1.5s ease-in-out forwards; 
+  animation: shinyWave 1.5s ease-in-out forwards;
   cursor: pointer;
 }
 
-.tabs{
+.tabs {
 
   padding-left: 3%;
   padding-right: 3%;
@@ -78,7 +98,7 @@ input[type="checkbox"] {
   padding-bottom: 1%;
   cursor: pointer;
 
-  &.selected{
+  &.selected {
     color: rgb(0, 0, 0);
     cursor: pointer;
     border-bottom: 3px rgb(0, 98, 255) solid;
@@ -88,13 +108,15 @@ input[type="checkbox"] {
 
 @keyframes shinyWave {
   0% {
-    background-position: -100% 50%; 
+    background-position: -100% 50%;
   }
+
   50% {
-    background-position: 50% 50%; 
+    background-position: 50% 50%;
   }
+
   100% {
-    background-position: 100% 50%; 
+    background-position: 100% 50%;
   }
 }
 
@@ -103,37 +125,37 @@ input[type="checkbox"] {
 
 
 @media screen and (max-width: 768px) {
-  .main{
+  .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .main-video{
+  .main-video {
     width: 100%;
     height: 100%;
   }
 
-  #filters{
-    grid-template-columns: repeat(2,minmax(0,1fr));
+  #filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.8rem;
   }
 
-  #modalContent{
+  #modalContent {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     overflow: auto;
   }
 
-  #modalContent::-webkit-scrollbar{
+  #modalContent::-webkit-scrollbar {
     display: none;
   }
-  
+
 }
 
-@media screen and (max-width: 430px){
-  #filters{
-    grid-template-columns: repeat(1,minmax(0,1fr));
+@media screen and (max-width: 430px) {
+  #filters {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 0.8rem;
   }
 }

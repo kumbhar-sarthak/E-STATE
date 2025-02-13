@@ -62,7 +62,7 @@ export const Page3 = () => {
       });
     }
 
-    const interval = setInterval(autoScroll, 7000);
+    const interval = setInterval(autoScroll, 10000);
 
     return () => {
       window.removeEventListener('resize', handleResize);
