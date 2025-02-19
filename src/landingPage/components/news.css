@@ -1,0 +1,80 @@
+
+.scroll-container {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 2.5vw;
+}
+
+/* .scroll-container::-webkit-scrollbar {
+  display: none;
+} */
+
+
+.snap-item {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  scroll-snap-align: center;
+  background-size: cover;
+  position: center center;
+}
+
+#n1 {
+  background-image: radial-gradient(circle,
+      rgba(21, 21, 21, 0.324) 40%,
+      rgba(27, 27, 27, 0.8) 70%,
+      rgba(43, 43, 43, 1) 90%),
+    url('./public/img3.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+#n2 {
+  background-image: radial-gradient(circle,
+      rgba(21, 21, 21, 0.324) 40%,
+      rgba(27, 27, 27, 0.8) 70%,
+      rgba(43, 43, 43, 1) 90%),
+    url('./public/img2.webp');
+}
+
+#n3 {
+  background-image: radial-gradient(circle,
+      rgba(21, 21, 21, 0.324) 40%,
+      rgba(27, 27, 27, 0.8) 70%,
+      rgba(43, 43, 43, 1) 90%),
+    url('./public/img1.webp');
+}
+
+#n4 {
+  background-image: radial-gradient(circle,
+      rgba(21, 21, 21, 0.324) 40%,
+      rgba(27, 27, 27, 0.8) 70%,
+      rgba(43, 43, 43, 1) 90%),
+    url('https://s.yimg.com/fz/api/res/1.2/_kxX48hJuW6TqTtirCkGWg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODQ7cT04MDt3PTUxMg--/https://s.yimg.com/am/60d/f0c1ba21c1fe8867db09afc14ab9db58');
+}
+
+
+#n5 {
+  background-image: radial-gradient(circle,
+      rgba(21, 21, 21, 0.324) 40%,
+      rgba(27, 27, 27, 0.8) 70%,
+      rgba(43, 43, 43, 1) 90%),
+    url('https://assets.thesparksite.com/uploads/sites/1542/2016/02/Real-estate-news.jpg');
+}
+
+
+@media screen and (max-width: 770px) {
+  .scroll-container{
+    display: none;
+  }
+}
