@@ -34,7 +34,7 @@
       rgba(21, 21, 21, 0.324) 40%,
       rgba(27, 27, 27, 0.8) 70%,
       rgba(43, 43, 43, 1) 90%),
-    url('./public/img3.webp');
+    url('./img3.webp');
   background-size: cover;
   background-position: center;
 }
@@ -44,7 +44,7 @@
       rgba(21, 21, 21, 0.324) 40%,
       rgba(27, 27, 27, 0.8) 70%,
       rgba(43, 43, 43, 1) 90%),
-    url('./public/img2.webp');
+    url('./img2.webp');
 }
 
 #n3 {
@@ -52,7 +52,7 @@
       rgba(21, 21, 21, 0.324) 40%,
       rgba(27, 27, 27, 0.8) 70%,
       rgba(43, 43, 43, 1) 90%),
-    url('./public/img1.webp');
+    url('./img1.webp');
 }
 
 #n4 {
