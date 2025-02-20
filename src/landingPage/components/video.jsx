@@ -1,7 +1,5 @@
-
-
 export const Video = () => {
-  return(
+  return (
     // Taken from https://www.youtube.com/watch?v=eRBNnfXXF4w
     <>
       <video
@@ -13,6 +11,5 @@ export const Video = () => {
         <source src="/display.mp4" type="video/mp4" />
       </video>
     </>
-  )
-}
-
+  );
+};

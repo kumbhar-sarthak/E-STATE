@@ -9,22 +9,18 @@ html {
   scrollbar-width: none;
 }
 
-
 ::-webkit-scrollbar {
   display: none;
 }
 
-
 body {
   font-family: "Poppins", serif;
-  ;
   font-weight: 400;
 }
 
 ::selection {
   background-color: rgba(128, 240, 229, 0.832);
 }
-
 
 @keyframes gradientMove {
   0% {
@@ -37,7 +33,6 @@ body {
 }
 
 @keyframes glow {
-
   0%,
   100% {
     box-shadow: 0 0 10px #e4b1bfba;
@@ -54,11 +49,6 @@ body {
   animation: gradientMove 3s alternate infinite, glow 3s alternate infinite;
 }
 
-
-
-
-
-
 #modalDiv.hidden {
   display: none;
 }
@@ -73,7 +63,6 @@ body {
   transform: scale(1);
   opacity: 1;
 }
-
 
 input[type="checkbox"] {
   width: 16px;
@@ -101,7 +90,6 @@ input[type="checkbox"] {
 }
 
 .tabs {
-
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 1%;
@@ -114,7 +102,6 @@ input[type="checkbox"] {
     border-bottom: 3px rgb(0, 98, 255) solid;
   }
 }
-
 
 @keyframes shinyWave {
   0% {
@@ -129,10 +116,6 @@ input[type="checkbox"] {
     background-position: 100% 50%;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .main {
@@ -160,7 +143,6 @@ input[type="checkbox"] {
   #modalContent::-webkit-scrollbar {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 430px) {

@@ -1,4 +1,3 @@
-
 .scroll-container {
   width: 100%;
   height: 300px;
@@ -13,7 +12,6 @@
 /* .scroll-container::-webkit-scrollbar {
   display: none;
 } */
-
 
 .snap-item {
   width: 100%;
@@ -30,51 +28,59 @@
 }
 
 #n1 {
-  background-image: radial-gradient(circle,
+  background-image: radial-gradient(
+      circle,
       rgba(21, 21, 21, 0.324) 40%,
       rgba(27, 27, 27, 0.8) 70%,
-      rgba(43, 43, 43, 1) 90%),
-    url('./img3.webp');
+      rgba(43, 43, 43, 1) 90%
+    ),
+    url("./img3.webp");
   background-size: cover;
   background-position: center;
 }
 
 #n2 {
-  background-image: radial-gradient(circle,
+  background-image: radial-gradient(
+      circle,
       rgba(21, 21, 21, 0.324) 40%,
       rgba(27, 27, 27, 0.8) 70%,
-      rgba(43, 43, 43, 1) 90%),
-    url('./img2.webp');
+      rgba(43, 43, 43, 1) 90%
+    ),
+    url("./img2.webp");
 }
 
 #n3 {
-  background-image: radial-gradient(circle,
+  background-image: radial-gradient(
+      circle,
       rgba(21, 21, 21, 0.324) 40%,
       rgba(27, 27, 27, 0.8) 70%,
-      rgba(43, 43, 43, 1) 90%),
-    url('./img1.webp');
+      rgba(43, 43, 43, 1) 90%
+    ),
+    url("./img1.webp");
 }
 
 #n4 {
-  background-image: radial-gradient(circle,
+  background-image: radial-gradient(
+      circle,
       rgba(21, 21, 21, 0.324) 40%,
       rgba(27, 27, 27, 0.8) 70%,
-      rgba(43, 43, 43, 1) 90%),
-    url('https://s.yimg.com/fz/api/res/1.2/_kxX48hJuW6TqTtirCkGWg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODQ7cT04MDt3PTUxMg--/https://s.yimg.com/am/60d/f0c1ba21c1fe8867db09afc14ab9db58');
+      rgba(43, 43, 43, 1) 90%
+    ),
+    url("https://s.yimg.com/fz/api/res/1.2/_kxX48hJuW6TqTtirCkGWg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD0zODQ7cT04MDt3PTUxMg--/https://s.yimg.com/am/60d/f0c1ba21c1fe8867db09afc14ab9db58");
 }
-
 
 #n5 {
-  background-image: radial-gradient(circle,
+  background-image: radial-gradient(
+      circle,
       rgba(21, 21, 21, 0.324) 40%,
       rgba(27, 27, 27, 0.8) 70%,
-      rgba(43, 43, 43, 1) 90%),
-    url('https://assets.thesparksite.com/uploads/sites/1542/2016/02/Real-estate-news.jpg');
+      rgba(43, 43, 43, 1) 90%
+    ),
+    url("https://assets.thesparksite.com/uploads/sites/1542/2016/02/Real-estate-news.jpg");
 }
 
-
 @media screen and (max-width: 770px) {
-  .scroll-container{
+  .scroll-container {
     display: none;
   }
 }

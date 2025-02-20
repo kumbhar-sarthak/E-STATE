@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
-import './page3.css';
+import { useEffect, useRef } from "react";
+import "./page3.css";
 
 export const Page3 = () => {
   const leftbtn = useRef(null);
@@ -28,36 +28,43 @@ export const Page3 = () => {
         if (scrollingRight) {
           if (
             scrollContainer.current.scrollLeft >=
-            scrollContainer.current.scrollWidth - scrollContainer.current.clientWidth
+            scrollContainer.current.scrollWidth -
+              scrollContainer.current.clientWidth
           ) {
             scrollingRight = false;
           } else {
-            scrollContainer.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            scrollContainer.current.scrollBy({
+              left: scrollAmount,
+              behavior: "smooth",
+            });
           }
         } else {
           if (scrollContainer.current.scrollLeft <= 0) {
             scrollingRight = true;
           } else {
-            scrollContainer.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            scrollContainer.current.scrollBy({
+              left: -scrollAmount,
+              behavior: "smooth",
+            });
           }
         }
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     if (rightbtn.current && leftbtn.current && scrollContainer.current) {
-      rightbtn.current.addEventListener('click', () => {
+      rightbtn.current.addEventListener("click", () => {
         scrollContainer.current.scrollBy({
           left: scrollAmount,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       });
 
-      leftbtn.current.addEventListener('click', () => {
+      leftbtn.current.addEventListener("click", () => {
         scrollContainer.current.scrollBy({
           left: -scrollAmount,
-          behavior: 'smooth',
+          behavior: "smooth",
         });
       });
     }
@@ -65,7 +72,7 @@ export const Page3 = () => {
     const interval = setInterval(autoScroll, 10000);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       clearInterval(interval);
     };
   }, []);
@@ -75,7 +82,10 @@ export const Page3 = () => {
       <div className="flex w-full h-full">
         <div className="first flex-1 bg-blue-500">
           <div className="relative h-full overflow-hidden">
-            <div className="absolute inset-0 flex overflow-x-scroll scrollbar-hide" ref={scrollContainer}>
+            <div
+              className="absolute inset-0 flex overflow-x-scroll scrollbar-hide"
+              ref={scrollContainer}
+            >
               <img
                 src="https://images.pexels.com/photos/18604178/pexels-photo-18604178/free-photo-of-a-view-of-a-city-at-sunset-with-buildings-and-mountains.jpeg?auto=compress&cs=tinysrgb&w=600"
                 alt="Image 1"
@@ -102,16 +112,38 @@ export const Page3 = () => {
                 className="w-10 h-10 flex items-center justify-center bg-transparent border border-gray-300 rounded-full cursor-pointer"
                 ref={leftbtn}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-gray-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M15 19l-7-7 7-7"
+                  />
                 </svg>
               </button>
               <button
                 className="w-10 h-10 flex items-center justify-center bg-transparent border border-gray-300 rounded-full cursor-pointer"
                 ref={rightbtn}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6 text-gray-300"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </button>
             </div>
@@ -176,7 +208,10 @@ export const Page3 = () => {
                 />
               </div>
             </div>
-            <button type="submit" className=" cursor-pointer w-full p-2 bg-black text-white font-sans rounded-3xl">
+            <button
+              type="submit"
+              className=" cursor-pointer w-full p-2 bg-black text-white font-sans rounded-3xl"
+            >
               Submit
             </button>
           </form>

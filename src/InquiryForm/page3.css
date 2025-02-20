@@ -7,22 +7,22 @@
   scrollbar-width: none;
 }
 
-@media screen and (max-width : 730px){
-  .inputs{
+@media screen and (max-width: 730px) {
+  .inputs {
     display: flex;
     flex-direction: column;
     justify-content: start;
   }
-  .dateinput{
+  .dateinput {
     margin-right: 0%;
   }
-  .mobileinput{
+  .mobileinput {
     margin-left: 0%;
   }
 }
 
-@media screen and (max-width : 500px){
-  .first{
+@media screen and (max-width: 500px) {
+  .first {
     display: none;
   }
 }

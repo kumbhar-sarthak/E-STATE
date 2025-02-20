@@ -1,11 +1,11 @@
-.images{
-  background-image: url('https://images.pexels.com/photos/903028/pexels-photo-903028.jpeg?auto=compress&cs=tinysrgb&w=600');
+.images {
+  background-image: url("https://images.pexels.com/photos/903028/pexels-photo-903028.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-clip: text;
   color: transparent;
 }
 
 @media screen and (max-width: 1100px) {
-  .about{
+  .about {
     position: absolute;
     bottom: 0;
     margin-bottom: 5vw;

@@ -1,10 +1,7 @@
-import { useEffect, useState } from "react";
-import {useCursor } from "./cursorAnimation"
+import { useCursor } from "./cursorAnimation";
 import "./customCursor.css";
 
 export const Cursor = () => {
-  
-
   const { cursorX, cursorY } = useCursor();
 
   return (

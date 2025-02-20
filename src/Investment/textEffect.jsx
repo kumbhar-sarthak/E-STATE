@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./TextEffect.css"; 
+import "./TextEffect.css";
 
 export const TextEffect = () => {
   useEffect(() => {
@@ -28,4 +28,3 @@ export const TextEffect = () => {
     </div>
   );
 };
-

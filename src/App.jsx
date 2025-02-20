@@ -5,7 +5,6 @@ import Loader from './components/Loader.jsx'
 
 const Home = React.lazy(() => import('./landingPage/Home.jsx'))
 
-// adding routes for profile, property card etc
 function App() {
   return (
     <Router>
