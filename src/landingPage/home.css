@@ -35,18 +35,24 @@ body {
 @keyframes glow {
   0%,
   100% {
-    box-shadow: 0 0 10px #e4b1bfba;
+    box-shadow: 0 0 5px #000000ba;
   }
 
   50% {
-    box-shadow: 0 0 20px rgba(255, 183, 193, 0.389);
+    box-shadow: 0 0 5px rgba(6, 6, 66, 0.389);
   }
 }
 
 .custom {
-  background: linear-gradient(to bottom left, #ffedfaba, #dca2b2b9);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 14%,
+    rgba(8, 12, 32, 1) 48%,
+    rgba(8, 17, 60, 1) 83%,
+    rgba(1, 13, 77, 1) 100%
+  );
   background-size: 200% 200%;
-  animation: gradientMove 3s alternate infinite, glow 3s alternate infinite;
+  animation: gradientMove 5s alternate infinite, glow 5s alternate infinite;
 }
 
 #modalDiv.hidden {

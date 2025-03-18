@@ -11,6 +11,7 @@ export const Search = () => {
 
   const showModal = () => {
     setIsModalVisible(true);
+    document.body.style.overflow = "hidden"
     setTimeout(() => {
       modalContentRef.current?.classList.add("active");
     }, 40);
@@ -19,6 +20,7 @@ export const Search = () => {
   const closeModal = () => {
     if (modalContentRef.current) {
       setIsModalVisible(false);
+      document.body.style.overflow = ""
       setTimeout(() => {
         modalContentRef.current.classList.remove("active");
       }, 400);
@@ -30,7 +32,6 @@ export const Search = () => {
       modalContentRef.current &&
       !modalContentRef.current.contains(event.target)
     ) {
-      console.log("Outside modal content. Closing modal.");
       closeModal();
     }
   };
@@ -86,7 +87,7 @@ export const Search = () => {
     setbudget(false);
   };
 
-  // this is menu or search page for finding property
+  
   return (
     <>
       <div
@@ -94,7 +95,7 @@ export const Search = () => {
         ref={triggerDivRef}
         onMouseEnter={showModal}
       >
-        <TbHomeSearch size={40} color="rgba(0, 0, 0, 0.169)" />
+        <TbHomeSearch size={40} color="rgba(186, 186, 186, 0.22)" />
       </div>
       {isModalVisible && (
         <div
@@ -104,11 +105,11 @@ export const Search = () => {
           <div
             id="modalContent"
             ref={modalContentRef}
-            className="w-[80vw] h-[80vh] max-w-full max-h-full bg-white shadow-lg rounded-lg p-6 scale-modal"
+            className="w-[80vw] h-[95vh] max-w-full max-h-full bg-white shadow-lg rounded-lg p-6 scale-modal overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div>
-              <ul className="flex gap-5">
+              <ul className="flex gap-5 text-1xl">
                 <li
                   className="tabs selected"
                   onClick={handleTabSwitch}
@@ -127,8 +128,8 @@ export const Search = () => {
                 </li>
               </ul>
             </div>
-            {/* buy */}
-            <p className="text-gray-600 mb-6 mt-10">
+
+            <div className="text-gray-600 mb-6 mt-10">
               <form action="/submit">
                 <div>
                   <div className="w-full flex items-center gap-4">
@@ -179,7 +180,7 @@ export const Search = () => {
                   </div>
                 </div>
               </form>
-            </p>
+            </div>
             <div id="buy-slider">
               <div className="flex space-x-2">
                 <button
@@ -235,7 +236,6 @@ export const Search = () => {
               )}
             </div>
 
-            {/* for all is same */}
             <div id="buy-buttons" className="flex gap-4 items-center mt-5">
               <div
                 className="search"

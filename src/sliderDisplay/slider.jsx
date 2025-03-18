@@ -61,7 +61,7 @@ const Slider = () => {
   return (
     <div className="w-full h-full p-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4">Hot Properties </h2>
+        <h2 className="text-2xl font-bold mb-4">Hot Properties 🔥</h2>
         <div className="w-full h-full relative slider-container group">
           <div className="absolute left-0 top-0 bottom-0 w-48 h-full flex justify-end items-center button-container-left">
             <div
