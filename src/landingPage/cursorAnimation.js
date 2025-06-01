@@ -70,5 +70,5 @@ export const useCursor = () => {
     requestAnimationFrame(animateCursor);
   }, [state.mouseX, state.mouseY, state.cursorX, state.cursorY]);
 
-  return { cursorX: state.cursorX, cursorY: state.cursorY };
+  return { cursorX: state.cursorX + 20, cursorY: state.cursorY + 20};
 };

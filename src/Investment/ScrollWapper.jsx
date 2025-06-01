@@ -43,6 +43,7 @@ const ScrollingWrapper = () => {
 
         ScrollTrigger.refresh();
       });
+
       return () => contain.revert();
     } else {
       document.querySelector(".scrolling-wrapper").style.overflowX = "hidden";

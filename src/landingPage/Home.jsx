@@ -54,26 +54,26 @@ const Home = () => {
     <>
       <div className=" overflow-y-scroll snap-y snap-mandatory">
         {/* <Cursor /> */}
-        <div className="w-full h-screen snap-start">
+        <div className="w-full h-[100dvh] snap-start">
           <Navbar />
           <Banner />
         </div>
-        <div className="w-full h-screen mt-20 snap-start">
+        <div className="w-full h-[100dvh] mt-20 snap-start">
           <Slider />
         </div>
         <div
-          className="w-full h-screen snap-start opacity-0 translate-y-10 transition-all duration-700 p-6"
+          className="w-full h-[100dvh] snap-start opacity-0 translate-y-10 transition-all duration-700 p-6"
           ref={sectionThird}
         >
           <Page3 />
         </div>
-        <div className=" w-full h-screen mt-40 snap-start">
+        <div className=" w-full min-h-[100dvh] mt-40 snap-start">
           <TextEffect />
         </div>
-        <div className="w-full h-full mt-10 snap-start">
+        <div className="w-full min-h-[100dvh] mt-10 snap-start">
           <ScrollingWrapper />
         </div>
-        <div className="w-full h-screen mt-10 snap-start " id="about">
+        <div className="w-full h-[100dvh] mt-10 snap-start " id="about">
           <About />
         </div>
       </div>

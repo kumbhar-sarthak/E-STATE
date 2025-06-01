@@ -101,11 +101,12 @@ export const Search = () => {
         <div
           className="absolute inset-0 flex items-center justify-center w-full h-screen bg-opacity-50 z-10"
           id="modalDiv"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
         >
           <div
             id="modalContent"
             ref={modalContentRef}
-            className="w-[80vw] h-[95vh] max-w-full max-h-full bg-white shadow-lg rounded-lg p-6 scale-modal overflow-auto"
+            className="w-[80vw] h-[95dvh] max-w-full max-h-full bg-white  rounded-lg p-6 scale-modal overflow-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <div>
