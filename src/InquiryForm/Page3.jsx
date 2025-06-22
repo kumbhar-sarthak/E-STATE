@@ -151,7 +151,7 @@ export const Page3 = () => {
         </div>
 
         <div className="flex-1 bg-white text-black">
-          <h1 className="text-3xl font-bold mb-6 mt-4 pl-5">Inquiry</h1>
+          <h1 className="text-6xl font-bold mb-6 mt-4 pl-5">Inquiry</h1>
           <form className="m-8">
             <div className="mb-4">
               <label htmlFor="fullname" className="block mb-2">
@@ -210,7 +210,7 @@ export const Page3 = () => {
             </div>
             <button
               type="submit"
-              className=" cursor-pointer w-full p-2 bg-black text-white font-sans rounded-3xl"
+              className=" cursor-pointer w-full p-2 bg-black text-white font-sans rounded-lg"
             >
               Submit
             </button>
